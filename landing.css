@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: white;
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 101%;
+    background-color: rgba(0, 0, 0, 0.575);
+    margin-top: -7px;
+    margin-left: -6px;
+    height: 8vh;
+    padding: 22px 4px;
+    z-index: 1;
+    color: white;
+
+   
+}
+.namaste{
+    height: 50px;
+    width: 50px;
+}
+.logo{
+    display: flex;
+}
+
+ul{
+    display:flex;
+   
+}
+nav ul li{
+    font-weight: 800;
+    display: inline-block;
+    margin-right: 50px;
+    cursor: pointer;
+}
+nav ul li i{
+    font-size: larger;
+}
+
+/* End of Navbar */
+
+/* style for item-1 */
+
+.platform{
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    grid-column: 2/span 2;
+    height: 100vh;
+    width: 100%;
+    background: url(incredible.jpg) no-repeat center center/cover;
+    
+ 
+}
+.item1{
+    height: 80vh;
+    background-color: rgba(255, 255, 255,0.027);
+    backdrop-filter: blur(8px);
+    border-top:1px solid rgba(255,255,255,0.4);
+    border-left:1px solid rgba(255,255,255,0.4);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.18);
+    border-radius: 10px;
+    margin-top: 110px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    /* overflow-y: scroll; */
+}
+.chatbox{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 30px;
+    border: 2px solid white;
+    margin-top: 87%;
+    margin-left: 4%;
+    border-radius: 20px;
+    padding: 2px 4px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.18);
+    /* overflow-y: scroll; */
+
+}
+.Text{
+    background-color: transparent;
+    width: 66%;
+    border: none;
+    outline: none;
+    color: inherit;
+}
+.Text::placeholder{
+    color: rgba(255, 255, 255, 0.636);
+}
+.Text:focus{
+    color: white;
+    font-weight: bold;
+}
+.Text:focus::placeholder{
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.778);
+}
+.drop{
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.mic{
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.send{
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* style for item-2 */
+.item3{
+    margin-top: 28vh;
+}
+.item3 h2{
+    margin-left: 12%;
+    color: white;
+}
+.mapsearch{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    height: 30px;
+    width: 33%;
+    border-radius: 10px;
+    margin-left: 20%;
+    outline: none;
+}
+.mapslct{
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.288);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.class img{
+    margin-top: 20px;
+    margin-left: 17%;
+    height: 320px;
+    width: 270px;
+}
+.mapsearch::placeholder{
+    color: white;
+}
+.mapsearch:focus{
+    color: white;
+    font-weight: bolder;
+}
+
+/* End of item2 */
+footer{
+    text-align: center;
+    height: 29px;
+    padding-top: 4px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    
+}
